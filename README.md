@@ -107,7 +107,7 @@ Pronto!! O sistema está rodando no servidor local e para acessa-lo, basta ir pa
 
 
 ## :cloud: Deploy
-O projeto está feito deploy na plataforma heroku e para acessa-lo, basta [clicar aqui](https://gestao-de-tarefas.herokuapp.com/tarefas-concluidas.jr) para acessar. Todas as rotas mencionadas acima, estão em pleno funcionamento no ambiente que está feio o deploy. A diferença é que para acessar, você deve utilizar `https://gestao-de-tarefas.herokuapp.com/` ao invés de `localhost:8080/`
+O projeto está feito deploy na plataforma heroku e para acessa-lo, basta [clicar aqui](https://gestao-de-tarefas.herokuapp.com/tarefas.jr) para acessar. Todas as rotas mencionadas acima, estão em pleno funcionamento no ambiente que está feio o deploy. A diferença é que para acessar, você deve utilizar `https://gestao-de-tarefas.herokuapp.com/` ao invés de `localhost:8080/`
 
 <br/><br/>
 ---
