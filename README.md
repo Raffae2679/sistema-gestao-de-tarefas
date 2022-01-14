@@ -10,12 +10,12 @@ Sistema de gestão de tarefas é um projeto desenvolvido usndo spring boot, jsf 
 - Docker
 
 ## :pushpin: Objetivos
-- [x] Criar aplicação utilizando JSF
-- [x] Utilizar uma persistência em um banco de dados PostgreSQL
-- [x] Utilizar JPA
-- [ ] Utilizar Testes de unidades
-- [x] Publicar projeto no heroku 
-- [x] Outros diferencias que julgar conveniente (Swagger)
+- [x] Criar aplicação utilizando JSF :heavy_check_mark:
+- [x] Utilizar uma persistência em um banco de dados PostgreSQL :heavy_check_mark:
+- [x] Utilizar JPA :heavy_check_mark:
+- [ ] Utilizar Testes de unidades :x:
+- [x] Publicar projeto no heroku :heavy_check_mark:
+- [x] Outros diferencias que julgar conveniente (Swagger) :heavy_check_mark:
 
 ## Executando Localmente
 
@@ -107,7 +107,8 @@ Pronto!! O sistema está rodando no servidor local e para acessa-lo, basta ir pa
 
 
 ## :cloud: Deploy
-O projeto está feito deploy na plataforma heroku e para acessa-lo, basta entrar pelo endereço `https://gestao-de-tarefas.herokuapp.com/tarefas-concluidas.jr`. Todas as rotaas mencionadas acima, estão em pleno funcionamento no ambiente que está feio o deploy. A diferença é que para acessar, você deve utilizar `https://gestao-de-tarefas.herokuapp.com/` ao invés de `localhost:8080/`
+O projeto está feito deploy na plataforma heroku e para acessa-lo, basta [clicar aqui](https://gestao-de-tarefas.herokuapp.com/tarefas-concluidas.jr) para acessar. Todas as rotas mencionadas acima, estão em pleno funcionamento no ambiente que está feio o deploy. A diferença é que para acessar, você deve utilizar `https://gestao-de-tarefas.herokuapp.com/` ao invés de `localhost:8080/`
 
-
-
+<br/><br/>
+---
+<p align="center">Desenvolvido com 💜 por Raffael Morais</p>
