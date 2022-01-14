@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xml:lang="en"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Lista de Tarefas</title>
+</h:head>
+<f:view>
+    <h:body>
+        <center><h2><h:outputText value="Cadastrar Nova Tarefa" /></h2></center>
+
+
+
+
+
+        <h:form id="checkForm">
+            <h:panelGrid columns="2" cellpadding="5" style="margin: 0 auto;">
+                <p:outputLabel for="titulo" value="Título"/>
+                <p:inputText id="titulo" value="#{tarefaMB.tarefa.titulo}"/>
+
+                <p:outputLabel for="descricao" value="Descrição"/>
+                <p:inputText id="descricao" value="#{tarefaMB.tarefa.descricao}"/>
+
+                <p:outputLabel for="trrl" value="Responsável"/>
+                <p:inputText id="trrl" value="#{tarefaMB.tarefa.responsavel}" />
+
+
+                <p:outputLabel for="trl" value="Prioridade"/>
+                <p:inputText id="trl" value="#{tarefaMB.tarefa.prioridade}" />
+
+                <p:outputLabel  value="Deadline" />
+                <p:inputText value="#{tarefaMB.tarefa.deadline}" />
+
+                <p:commandButton value="Atualizar" action="#{tarefaMB.atualizar(tarefaMB.tarefa)}"
+                                 update="@form"
+                                 icon=" ui-icon-check" />
+
+            </h:panelGrid>
+
+
+
+
+
+        </h:form>
+
+    </h:body>
+</f:view>
+</html>

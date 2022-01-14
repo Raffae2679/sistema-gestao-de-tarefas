@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xml:lang="en"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Lista de Tarefas</title>
+</h:head>
+<f:view>
+    <h:body>
+        <center><h2><h:outputText value="Lista de Tarefas Concluidas" /></h2></center>
+
+        <h:form id="tarefasForm">
+            <p:dataTable id="tabelaTarefa" var="tar" value="#{tarefaMB.listarConcluidas()}" prependId="false"
+                         paginator="true" rows="25" emptyMessage="Não há tarefas cadastrados."
+                         rowKey="#{tar.id}" selectionMode="single"
+                         selection="#{tarefaMB.tarefa}">
+                <p:column>
+                    <f:facet name="header">Id</f:facet>
+                    <h:outputText value="#{tar.id}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">Titulo</f:facet>
+                    <h:outputText value="#{tar.titulo}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">Descrição</f:facet>
+                    <h:outputText value="#{tar.descricao}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">Responsavel</f:facet>
+                    <h:outputText value="#{tar.responsavel}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">Prioridade</f:facet>
+                    <h:outputText value="#{tar.prioridade}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">Deadline</f:facet>
+                    <h:outputText value="#{tar.deadline}" />
+                </p:column>
+
+            </p:dataTable>
+
+
+
+
+
+        </h:form>
+
+
+
+
+
+    </h:body>
+</f:view>
+</html>

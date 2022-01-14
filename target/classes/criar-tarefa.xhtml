@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xml:lang="en"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Lista de Tarefas</title>
+</h:head>
+<f:view>
+    <h:body>
+        <center><h2><h:outputText value="Cadastrar Nova Tarefa" /></h2></center>
+
+
+
+
+
+            <h:form id="checkForm">
+                <h:panelGrid columns="2" cellpadding="5" style="margin: 0 auto;">
+                    <p:outputLabel for="titulo" value="Título"/>
+                    <p:inputText id="titulo" value="#{tarefaMB.tarefa.titulo}"/>
+
+                    <p:outputLabel for="descricao" value="Descrição"/>
+                    <p:inputText id="descricao" value="#{tarefaMB.tarefa.descricao}"/>
+
+                    <p:outputLabel for="trrl" value="Responsável"/>
+                    <p:selectOneMenu id="trrl" value="#{tarefaMB.tarefa.responsavel}" style="width:125px" dir="ltl">
+                        <f:selectItem itemLabel="Select One" itemValue="" />
+                        <f:selectItem itemLabel="Raffael" itemValue="Raffael" />
+                        <f:selectItem itemLabel="Alex" itemValue="Alex" />
+                        <f:selectItem itemLabel="João" itemValue="João" />
+                    </p:selectOneMenu>
+
+                    <p:outputLabel for="trl" value="Prioridade"/>
+                    <p:selectOneMenu id="trl" value="#{tarefaMB.tarefa.prioridade}" style="width:125px" dir="ltl">
+                        <f:selectItem itemLabel="Select One" itemValue="" />
+                        <f:selectItem itemLabel="Alta" itemValue="Alta" />
+                        <f:selectItem itemLabel="Média" itemValue="Média" />
+                        <f:selectItem itemLabel="Baixa" itemValue="Baixa" />
+                    </p:selectOneMenu>
+
+                    <p:outputLabel  value="Deadline" />
+                    <p:inputText value="#{tarefaMB.tarefa.deadline}" />
+
+                    <p:commandButton value="Cadastrar" action="#{tarefaMB.incluir()}"
+                                     update="@form"
+                                     icon=" ui-icon-check" />
+
+                </h:panelGrid>
+
+
+
+
+
+            </h:form>
+
+    </h:body>
+</f:view>
+</html>
